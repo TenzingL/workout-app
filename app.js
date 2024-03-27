@@ -9,3 +9,7 @@ app.listen(3000, () => {
 app.get("/", (req, res) => {
     res.render("index.hbs")
 })
+
+app.get("/Create-Account", (req, res) => {
+    res.render("create-acc.hbs")
+})
