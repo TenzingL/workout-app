@@ -10,6 +10,9 @@
         h1{
             text-align: center;
         }
+        .errorMessage{
+            color: red;
+        }
     </style>
     <h1>Workout Tracker APP</h1>
 </head>
@@ -19,6 +22,8 @@
         <h3>Username:</h3><input id="username" name="username" required>
         <h3>Password:</h3><input id="password" name="password" type="password" required>
         <input type="submit">
+        {{#if error}}
+        <p class="errorMessage">{{error}}</p>
     </form>
     <p>If you don't have an account, click <a href="/Create-Account">here</a></p>
 </body>
